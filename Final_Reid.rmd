@@ -1,0 +1,51 @@
+---
+title: "Prenatal Mental Health and Birth Outcomes during the COVID-19 Pandemic Report"
+author: "Kirsten Reid"
+output: html_document
+params:
+  production: TRUE
+---
+
+# Introduction 
+
+The data set being used was collected for the purpose of showing prenatal mental health data and birth outcomes in pregnancy during the COVID-19 pandemic. The data was collected through a surbey and accounts for 15 different variables including: survey language, maternal age, household income, maternal education, Edinburgh Postnatal Depression Score (EPDS), PROMIS anxiety score, gestational age at birth, delivery date, birth length, birth weight, delivery mode, NICU stay, perceived threat to the pregnant individual's life and their baby's life, and worry about the harm that COVID-19 may do to their baby. The objectives of this analysis are to show the relationship of birth weight as a function of  birth length taking into account NICU stay and also show the relationship between EPDS score and the other data collected in the survey.
+
+
+```{r, set-chunk-opts, echo = FALSE, eval = params$production}
+library(knitr)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r, load-data}
+here::i_am("Final_Reid.rmd")
+
+data <- readRDS(
+  file = here::here("output/data_clean.rds"))
+```
+
+
+# Descriptive Analysis
+
+## Tabular Analysis
+
+Some of the characteristics of the `r nrow(data)` pregnant individuals from the mental health in pregnancy during the COVID-19 pandemic data set are displayed in the table below. A Edinburgh Postnatal Depression Score (EPDS) of 10 or more indicates possible postpartum depression (PPD) and is measured on a scale of 0-30.
+```{r, table1}
+table_one <- readRDS(
+  file = here::here("output/table_one.rds")
+)
+table_one
+```
+
+
+## Graphical Analysis
+
+The figure below is a scatter plot showing birth weight as a function of  birth length taking into account NICU stay.
+```{r, plot-data}
+#| fig.align = "center",
+
+knitr::include_graphics(
+  here::here("output/scatterplot.png")
+)
+```
