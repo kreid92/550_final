@@ -15,3 +15,5 @@ The contents of the project repository are included below.
   - the report saves to the parent project folder.
 
 All parts of the project are combined in `Final_Reid.Rmd`
+
+Use make in the command line to build the report.
