@@ -17,3 +17,4 @@ The contents of the project repository are included below.
 All parts of the project are combined in `Final_Reid.Rmd`
 
 Use make in the command line to build the report.
+Use make install will restore teh package library to synchronize packages from the command line.

@@ -17,3 +17,7 @@ analysis: output/table_one.rds output/scatterplot.png
 .PHONY: clean	
 clean:
 	rm -f output/*.rds && rm -f output/*.png && rm -f *.html
+
+.PHONY: install 
+install:
+	Rsript -e "renv::restore(prompt = FALSE)"
