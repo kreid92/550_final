@@ -4,7 +4,7 @@ The data is  survey-based data collected across Canada as part of the
 Pregnancy during the COVID-19 Pandemic (PdP) project. This purpose of this 
 project is to produce an analysis of the dataset.
 
-# Structure 
+## Structure 
 
 Code: All code used to generate tables, figures, and analysis.
 
@@ -25,7 +25,7 @@ Raw Data: Original dataset.
 
 All parts of the project are combined in `Final_Reid.Rmd`
 
-# Building the Project
+## Building the Project
 
 * Use 'make clean' in R terminal to remove previously generated files.
 * Use 'make install' in R terminal to restore the package library to synchronize packages with the project.
