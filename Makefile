@@ -2,7 +2,7 @@ Final_Reid.html: code/03_render_report.R \
   Final_Reid.rmd analysis
 	Rscript code/03_render_report.R
 
-output/data_clean.rds: code/00_clean_data.r pregnancy_covid_pandemic.csv
+output/data_clean.rds: code/00_clean_data.r raw_data/pregnancy_covid_pandemic.csv
 	Rscript code/00_clean_data.r
 	
 output/table_one.rds: code/01_make_table1.r output/data_clean.rds
@@ -20,4 +20,13 @@ clean:
 
 .PHONY: install 
 install:
-	Rsript -e "renv::restore(prompt = FALSE)"
+	Rscript -e "renv::restore(prompt = FALSE)"
+	
+	
+	
+	
+	
+	
+	
+	
+	# docker run krei92/final_image:latest

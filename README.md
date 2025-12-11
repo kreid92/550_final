@@ -1,7 +1,7 @@
 # Project Description
 
 The data is  survey-based data collected across Canada as part of the 
-Pregnancy during the COVID-19 Pandemic (PdP) project. This purpose of this 
+Pregnancy during the COVID-19 Pandemic (PdP) project. The purpose of this 
 project is to produce an analysis of the dataset.
 
 ## Structure 
@@ -30,3 +30,12 @@ All parts of the project are combined in `Final_Reid.Rmd`
 * Use 'make clean' in R terminal to remove previously generated files.
 * Use 'make install' in R terminal to restore the package library to synchronize packages with the project.
 * Use 'make' in R terminal to create the tables and figures, as well as build the final report.
+
+## Docker Build
+
+* 
+
+## Docker Run
+
+* 
+
