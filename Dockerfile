@@ -28,7 +28,7 @@ WORKDIR /home/rstudio/project
 COPY --from=base /home/rstudio/project .
 
 COPY Makefile /home/rstudio/project 
-COPY Final_Reid.Rmd /home/rstudio/project 
+COPY final_reid.rmd /home/rstudio/project
 
 RUN mkdir /home/rstudio/project/code 
 RUN mkdir /home/rstudio/project/output 
@@ -39,4 +39,4 @@ COPY raw_data/pregnancy_covid_pandemic.csv /home/rstudio/project/raw_data
 COPY ./code /home/rstudio/project/code 
 
 
-CMD make && mv Final_Reid.html /home/rstudio/project/report
+CMD make && mv final_reid.html /home/rstudio/project/report

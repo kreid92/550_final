@@ -1,5 +1,5 @@
-Final_Reid.html: code/03_render_report.R \
-  Final_Reid.rmd analysis
+final_reid.html: code/03_render_report.R \
+  final_reid.rmd analysis
 	Rscript code/03_render_report.R
 
 output/data_clean.rds: code/00_clean_data.r raw_data/pregnancy_covid_pandemic.csv
