@@ -1,15 +1,15 @@
-final_reid.html: code/03_render_report.R \
+report/final_reid.html: code/03_render_report.R \
   final_reid.rmd analysis
 	Rscript code/03_render_report.R
 
-output/data_clean.rds: code/00_clean_data.r raw_data/pregnancy_covid_pandemic.csv
-	Rscript code/00_clean_data.r
+output/data_clean.rds: code/00_clean_data.R raw_data/pregnancy_covid_pandemic.csv
+	Rscript code/00_clean_data.R
 	
-output/table_one.rds: code/01_make_table1.r output/data_clean.rds
-	Rscript code/01_make_table1.r
+output/table_one.rds: code/01_make_table1.R output/data_clean.rds
+	Rscript code/01_make_table1.R
 
-output/scatterplot.png: code/02_make_scatter.r output/data_clean.rds
-	Rscript code/02_make_scatter.r
+output/scatterplot.png: code/02_make_scatter.R output/data_clean.rds
+	Rscript code/02_make_scatter.R
 	
 .PHONY: analysis
 analysis: output/table_one.rds output/scatterplot.png
@@ -29,4 +29,4 @@ install:
 	
 	
 	
-	# docker run krei92/final_image:latest
+	# docker run -v "/$(pwd)"/report:/home/rstudio/project/report krei92/550_final

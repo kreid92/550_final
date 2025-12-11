@@ -1,8 +1,8 @@
 library(here)
-here::i_am("code/00_clean_data.r")
+here::i_am("code/00_clean_data.R")
 
 # data_url: https://www.kaggle.com/datasets/yeganehbavafa/mental-health-in-the-pregnancy-during-the-covid-19/data
-data <- read.csv('raw data/pregnancy_covid_pandemic.csv', header = TRUE)
+data <- read.csv('raw_data/pregnancy_covid_pandemic.csv', header = TRUE)
 
 library(labelled)
 

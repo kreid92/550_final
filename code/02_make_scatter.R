@@ -1,4 +1,4 @@
-here::i_am("code/02_make_scatter.r")
+here::i_am("code/02_make_scatter.R")
 
 data <- readRDS(
   file = here::here("output/data_clean.rds")

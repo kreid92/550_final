@@ -31,9 +31,17 @@ All parts of the project are combined in `Final_Reid.Rmd`
 * Use 'make install' in R terminal to restore the package library to synchronize packages with the project.
 * Use 'make' in R terminal to create the tables and figures, as well as build the final report.
 
+## Docker
+
+A Dockerfile is included in this repository that builds the image used to compile the report.
+
+DockerHub link: https://hub.docker.com/r/kreid92/550_final
+
 ## Docker Build
 
-* 
+To build the image locally in a bash terminal:
+
+docker build -t kreid92/550_final .
 
 ## Docker Run
 

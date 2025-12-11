@@ -1,9 +1,10 @@
-here::i_am("code/01_make_table1.r")
+here::i_am("code/01_make_table1.R")
 
 data <- readRDS(
   file = here::here("output/data_clean.rds")
 )
-
+install.packages("broom")
+library(broom)
 library(gtsummary)
 
 table_one <- data |>
