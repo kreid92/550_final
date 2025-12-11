@@ -45,7 +45,7 @@ docker build -t kreid92/550_final .
 
 ### Docker Run
 
-* In order to build the report on a Mac/Linus OS:
+* In order to build the report on a Mac/Linux OS:
     use 'make report-mac' in R terminal
     
 * In order to build the report on a Windows OS:
