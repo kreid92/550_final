@@ -1,4 +1,4 @@
-report/final_reid.html: code/03_render_report.R \
+final_reid.html: code/03_render_report.R \
   final_reid.rmd analysis
 	Rscript code/03_render_report.R
 
@@ -23,10 +23,17 @@ install:
 	Rscript -e "renv::restore(prompt = FALSE)"
 	
 	
-	
-	
-	
-	
-	
-	
-	# docker run -v "/$(pwd)"/report:/home/rstudio/project/report krei92/550_final
+docker_image = kreid92/550_final
+container_path = /home/rstudio/project/report
+
+# Mac/Linus-OS-specific target
+.PHONY: report-mac 	
+report-mac:
+	mkdir -p report
+	docker run -v "$$(pwd)/report:$(container_path)" $(docker_image)
+
+# Windows-OS-specific target
+.PHONY: report-windows 	
+report-windows:
+	mkdir -p report
+	docker run -v "/$$(pwd)/report:$(container_path)" $(docker_image)

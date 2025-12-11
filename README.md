@@ -37,13 +37,17 @@ A Dockerfile is included in this repository that builds the image used to compil
 
 DockerHub link: https://hub.docker.com/r/kreid92/550_final
 
-## Docker Build
+### Docker Build
 
 To build the image locally in a bash terminal:
 
 docker build -t kreid92/550_final .
 
-## Docker Run
+### Docker Run
 
-* 
+* In order to build the report on a Mac/Linus OS:
+    use 'make report-mac' in R terminal
+    
+* In order to build the report on a Windows OS:
+    use 'make report-windows' in R terminal
 
