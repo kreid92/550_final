@@ -34,7 +34,7 @@ Some of the characteristics of the `r nrow(data)` pregnant individuals from the 
 ```{r, table1}
 table_one <- readRDS(
   file = here::here("output/table_one.rds")
-)
+) 
 table_one
 ```
 

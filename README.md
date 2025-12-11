@@ -23,7 +23,7 @@ Code: All code used to generate tables, figures, and analysis.
 Output: The outputs of the code.
 Raw Data: Original dataset.
 
-All parts of the project are combined in `Final_Reid.Rmd`
+All parts of the project are combined in `final_reid.rmd`
 
 ## Building the Project
 
@@ -47,7 +47,6 @@ docker build -t kreid92/550_final .
 
 * In order to build the report on a Mac/Linux OS:
     use 'make report-mac' in R terminal
-    
 * In order to build the report on a Windows OS:
     use 'make report-windows' in R terminal
 
